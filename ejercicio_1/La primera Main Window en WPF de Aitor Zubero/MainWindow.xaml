@@ -1,0 +1,23 @@
+﻿<Window x:Class="La_primera_Main_Window_en_WPF_de_aitor_zubero.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:La_primera_Main_Window_en_WPF_de_Antonio_Aguilera"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="850" Icon="/recursos/1077114.png" MinHeight="200" MinWidth="500" Background="AliceBlue" Padding="50" BorderThickness="5,10,5,10" 
+         BorderBrush="Red">
+
+    <Grid>
+        <TextBlock Text="Title:aaa Añade un titulo a la ventanana, en mi caso -> La primera Main Window de aitor : &#10;
+                   Height: Define el alto inicial de la ventana en píxeles, en mi caso -> 500 ,&#10; 
+                   Width: Define el ancho inicial de la ventana en píxeles, en mi caso -> 850 ,&#10;
+                   Icon: Permite definir el icono, en mi caso -> icono de usuario ,&#10;
+                   Icon: Define el alto minimo de la ventana en píxeles , en mi caso -> 200&#10;
+                   Width: Define el ancho minimo de la ventana en píxeles, en mi caso -> 500 ,&#10;
+                   Background: Define el color dela ventana, en mi caso -> airblue ,&#10;
+                   Padding: Define el relleno de la ventana en píxeles, en mi caso -> 50 ,&#10;
+                   BorderThickness: Define el grosor del borde de la ventana en píxeles, en mi caso -> 5,10,5,10 ,&#10;
+                   BorderThickness: Define el color del borde de la ventana en píxeles, en mi caso -> red,&#10;"/>
+    </Grid>
+</Window>
