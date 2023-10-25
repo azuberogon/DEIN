@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace La_primera_Main_Window_en_WPF_de_Aitor_Zubero
+namespace ejercicio_1
 {
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml

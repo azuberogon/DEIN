@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace La_primera_Main_Window_en_WPF_de_Aitor_Zubero.Properties
+namespace ejercicio_1.Properties
 {
     /// <summary>
     ///   Clase de recurso fuertemente tipado para buscar cadenas traducidas, etc.
@@ -43,7 +43,7 @@ namespace La_primera_Main_Window_en_WPF_de_Aitor_Zubero.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("La_primera_Main_Window_en_WPF_de_Aitor_Zubero.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ejercicio_1.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

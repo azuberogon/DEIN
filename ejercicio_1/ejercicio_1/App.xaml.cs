@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace La_primera_Main_Window_en_WPF_de_Aitor_Zubero
+namespace ejercicio_1
 {
     /// <summary>
     /// Lógica de interacción para App.xaml
