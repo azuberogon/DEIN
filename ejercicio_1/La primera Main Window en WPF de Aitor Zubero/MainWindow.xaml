@@ -10,7 +10,7 @@
 
     <Grid>
         <TextBlock Text="Title:aaa Añade un titulo a la ventanana, en mi caso -> La primera Main Window de aitor : &#10;
-                   Height: Define el alto inicial de la ventana en píxeles, en mi caso -> 500 ,&#10; 
+                   Height:  Define el alto inicial de la ventana en píxeles, en mi caso -> 500 ,&#10; 
                    Width: Define el ancho inicial de la ventana en píxeles, en mi caso -> 850 ,&#10;
                    Icon: Permite definir el icono, en mi caso -> icono de usuario ,&#10;
                    Icon: Define el alto minimo de la ventana en píxeles , en mi caso -> 200&#10;
