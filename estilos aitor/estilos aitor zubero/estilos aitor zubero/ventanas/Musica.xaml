@@ -8,9 +8,9 @@
         Title="Musica" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="65*" />
-            <RowDefinition Height="354*" />
-
+            <RowDefinition Height="68*" />
+            <RowDefinition Height="259*" />
+            <RowDefinition Height="92*" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -34,15 +34,15 @@
                 <TextBox Text="   Busqueda" Margin="113.5,20,88,21" Grid.Column="1" />
 
             </Grid>
-
         </Border>
-
-        <Border Width="Auto" Background="#265A5A"  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
-            <Grid>
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Border Background="#400000" Margin="-136,0,0,-92">
+                <Image Source="/imagenes/discoMusica.jpg" Margin="278,38,278,78" />
                 
-            </Grid>
-
-        </Border>
-
+            </Border>
+            <Border Background="White" Margin="-76,300,76,-51" CornerRadius="10"/>
+            <Border Background="Red" Margin="-76,300,398,-51" CornerRadius="10"/>
+            <Border Background="White" Margin="248,300,398,-51" CornerRadius="100000" BorderBrush="Black" BorderThickness="0.6" />
+        </Grid>
     </Grid>
 </Window>

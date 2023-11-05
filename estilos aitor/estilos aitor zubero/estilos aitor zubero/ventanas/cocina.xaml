@@ -19,7 +19,7 @@
             <ColumnDefinition Width="34*" />
             <ColumnDefinition Width="329*" />
         </Grid.ColumnDefinitions>
-        <Button  Margin="0" Click="home"  x:Name="btn_home">
+        <Button  Margin="0"  >
              <Image Source="/imagenes/image2vector.png" Stretch="UniformToFill" />
         </Button>
        
