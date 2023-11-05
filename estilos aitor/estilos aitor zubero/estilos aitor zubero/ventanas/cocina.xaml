@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="cocina" Height="450" Width="800">
     <Grid>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="65*" />
             <RowDefinition Height="354*" />
@@ -19,25 +19,34 @@
             <ColumnDefinition Width="34*" />
             <ColumnDefinition Width="329*" />
         </Grid.ColumnDefinitions>
-        <Image Source="/imagenes/image2vector.png" Stretch="UniformToFill" />
+        <Button  Margin="0" Click="home"  x:Name="btn_home">
+             <Image Source="/imagenes/image2vector.png" Stretch="UniformToFill" />
+        </Button>
+       
 
         <Border Width="Auto" Background="#BCCCCC"  Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2">
             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="14*"/>
+                    <RowDefinition Height="8*"/>
+                    <RowDefinition Height="25*"/>
+                    <RowDefinition Height="19*"/>
+                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="191*"/>
                     <ColumnDefinition Width="534*"/>
                 </Grid.ColumnDefinitions>
-                <ComboBox Width="200" SelectedIndex="0" Margin="68,20,456,21" Background="Red" Grid.ColumnSpan="2">
+                <ComboBox Width="200" SelectedIndex="0" Margin="68,6,456,2.5" Background="Red" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Row="1">
                     <ComboBoxItem Content="home" />
                     <ComboBoxItem Content="ajustes" />
                     <ComboBoxItem Content="camaras" />
                 </ComboBox>
-                <TextBox Text="   Busqueda" Margin="113.5,20,88,21" Grid.Column="1" />
+                <TextBox Text="   Busqueda" Margin="113,6,88,2.5" Grid.Column="1" Grid.RowSpan="2" Grid.Row="1" />
 
             </Grid>
 
         </Border>
-        
+
         <Border Width="Auto" Background="#265A5A"  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
             <Grid>
 
@@ -51,7 +60,7 @@
         <Button Grid.Column="1" Grid.Row="1" Margin="127,142,459,199" Background="#00FF00" RenderTransformOrigin="0.5,0.5" Content="ON" />
         <Button Grid.Column="1" Grid.Row="1" Margin="382,176,201,166" Background="#00FF00" RenderTransformOrigin="0.816,0" Content="ON"/>
         <Image Source="/imagenes/cocina1.jpg" Grid.Column="2" Grid.Row="2" Stretch="UniformToFill"/>
-        
+
 
 
     </Grid>

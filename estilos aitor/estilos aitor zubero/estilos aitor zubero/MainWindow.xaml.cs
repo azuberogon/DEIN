@@ -38,7 +38,12 @@ namespace estilos_aitor_zubero
             this.Close();
             abrir_AJustes.Show();
         }
-
+        private void Btn_Muscia(object sender, RoutedEventArgs e)
+        {
+            Musica abrir_Musica = new Musica();
+            this.Close();
+            abrir_Musica.Show();
+        }
 
         private void btn_salir(object sender, RoutedEventArgs e) {
             System.Windows.Application.Current.Shutdown();
