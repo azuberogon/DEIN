@@ -23,5 +23,11 @@ namespace estilos_aitor_zubero.ventanas
         {
             InitializeComponent();
         }
+        private void home(object sender, RoutedEvent e) {
+            MainWindow abrirMainWindow = new MainWindow();
+            this.Close();
+            abrirMainWindow.Show();
+        }
+
     }
 }
