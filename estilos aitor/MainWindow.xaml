@@ -1,0 +1,34 @@
+﻿<Window x:Class="estilos_aitor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:estilos_aitor"
+        mc:Ignorable="d"
+        Title="Estilos Aitor" Height="450" Width="800">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Button Content="botón superior Izquierdo" Grid.Row="0" Grid.Column="0"  Background="Gold" Click="IrAsegundaVentan_Click"/>
+        <Button Content="boton 1 ajustes" Grid.Row="1" Grid.Column="0" />
+        <Button Content="boton 1 ajustes" Grid.Row="2" Grid.Column="0" />
+        <Button Content="boton 1 ajustes" Grid.Row="0" Grid.Column="1" />
+        <Button Content="boton 1 ajustes" Grid.Row="0" Grid.Column="2" />
+        <Button Content="boton 1 ajustes" Grid.Row="1" Grid.Column="1" />
+        <Button Content="boton 1 ajustes" Grid.Row="1" Grid.Column="2" />
+        <Button Content="boton 1 ajustes" Grid.Row="2" Grid.Column="1" />
+        <Button Content="boton 1 ajustes" Grid.Row="2" Grid.Column="2" />
+    </Grid>
+    
+</Window>
