@@ -14,28 +14,32 @@
             <RowDefinition Height="119*"/>
             <RowDefinition Height="29*"/>
             <RowDefinition Height="60*"/>
-            <RowDefinition Height="60*"/>
-            <RowDefinition Height="60*"/>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="89*"/>
             <RowDefinition Height="60*"/>
             <!--19-->
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="396"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
         <TextBlock Text="Introducir de Datos de Empleados" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.ColumnSpan="2" Margin="312,7,311,0" Height="24" Width="169" />
 
-        <Grid Grid.Column="0" Grid.Row="1">
-                
-            <TextBlock Text="Nombre*" Margin="0,0,340,106" />
+        <Grid Grid.Column="0" Grid.Row="1" Height="119" VerticalAlignment="Top">
+
+            <TextBlock Text="Nombre*" Margin="0,0,340,106"  />
             <TextBox x:Name="Nombre" Margin="61,0,0,108" />
             <TextBlock Text="Apellido*" Margin="0,16,340,90"/>
             <TextBox x:Name="Apellido" Margin="61,16,0,92" />
-            <TextBlock Text="Email" Margin="0,29,340,77" />
-            <TextBox x:Name="Email" Margin="61,31,0,77" />
-            <TextBlock Text="Telefona" Margin="0,42,340,64" />
-            <TextBox x:Name="Telefona" Margin="61,45,0,63" />
+            <TextBlock Text="Email" Margin="0,32,340,74" />
+            <TextBox x:Name="Email" Margin="61,32,0,76" />
+            <TextBlock Text="Telefono" Margin="0,46,340,60" />
+            <TextBox x:Name="Telefono" Margin="61,48,0,60" />
+            <TextBlock Text="Fecha de nacimineto" Margin="0,62,282,44" />
+            <DatePicker Name="FechaNacimiento"  Margin="119,62,0,31" />
+            <TextBlock Text="DNI" Margin="0,96,282,10" />
+            <TextBox x:Name="DNI" Margin="61,98,0,10" />
         </Grid>
 
 
