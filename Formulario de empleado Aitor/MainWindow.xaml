@@ -12,8 +12,8 @@
 
             <RowDefinition Height="31*"/>
             <RowDefinition Height="119*"/>
-            <RowDefinition Height="29*"/>
-            <RowDefinition Height="60*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="77*"/>
             <RowDefinition Height="31*"/>
             <RowDefinition Height="89*"/>
             <RowDefinition Height="60*"/>
@@ -41,6 +41,8 @@
             <TextBlock Text="DNI" Margin="0,96,282,10" />
             <TextBox x:Name="DNI" Margin="61,98,0,10" />
         </Grid>
+            
+        <Grid/>
 
 
     </Grid>
