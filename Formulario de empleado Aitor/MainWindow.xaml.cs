@@ -24,5 +24,10 @@ namespace Formulario_de_empleado_Aitor
         {
             InitializeComponent();
         }
+
+        private void miComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
