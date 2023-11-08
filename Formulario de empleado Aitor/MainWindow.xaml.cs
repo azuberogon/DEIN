@@ -29,5 +29,10 @@ namespace Formulario_de_empleado_Aitor
         {
 
         }
+
+        private void txtNombre_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

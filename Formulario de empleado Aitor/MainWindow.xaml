@@ -10,13 +10,11 @@
         <Grid.RowDefinitions>
 
 
-            <RowDefinition Height="25*"/>
-            <RowDefinition Height="109*"/>
-            <RowDefinition Height="0*"/>
-            <RowDefinition Height="36*"/>
-            <RowDefinition Height="0*"/>
-            <RowDefinition Height="85*"/>
-            <RowDefinition Height="153*"/>
+            <RowDefinition Height="73*"/>
+            <RowDefinition Height="123*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="430*"/>
 
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -26,10 +24,18 @@
 
         <TextBlock Text="Introducir de Datos de Empleados" FontSize="18" FontWeight="Bold" Grid.Row="0" Grid.ColumnSpan="2" Margin="267,0,226,5" />
 
-        <Grid Grid.Column="0" Grid.Row="1" Height="119" VerticalAlignment="Top" Grid.RowSpan="3">
+        <Grid Grid.Column="0" Grid.Row="1" Height="119" VerticalAlignment="Top">
 
-            <TextBlock Text="Nombre*" Margin="0,0,340,106"  />
-            <TextBox x:Name="Nombre" Margin="61,0,0,108" />
+            <TextBlock Text="Nombre*" Margin="0,0,340,106"/>
+            <TextBox x:Name="Nombre" Margin="61,0,0,108" >
+                <TextBox.Text>
+                    <Binding Path="Nombre" UpdateSourceTrigger="LostFocus">
+                        <Binding.ValidationRules>
+                            <!-- <local:RequiredFieldValidationRule ErrorMessage="Campo obligatorio" />-->
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
 
             <TextBlock Text="Apellido*" Margin="0,16,340,90"/>
             <TextBox x:Name="Apellido" Margin="61,16,0,92" />
@@ -47,12 +53,12 @@
             <TextBox x:Name="DNI" Margin="61,98,0,10" />
         </Grid>
 
-        <Grid Grid.Column="0" Grid.Row="3" Height="42" VerticalAlignment="Top" Grid.RowSpan="3">
+        <Grid Grid.Column="0" Grid.Row="2" Height="42" VerticalAlignment="Top">
             <TextBlock Text="Adjuntar fotografia" Margin="0,10,257,10"/>
             <Button  Margin="139,3,106,9" >Cargar Foto</Button>
         </Grid>
 
-        <Grid Grid.Column="0" Grid.Row="5">
+        <Grid Grid.Column="0" Grid.Row="3">
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="16"/>
@@ -77,34 +83,33 @@
             <TextBox Text="Pais" Grid.Row="4" Grid.Column="1" Margin="0,0,0,1"/>
 
         </Grid>
-        <Grid Grid.Column="1" Grid.Row="5" Margin="77,0,92,0">
+        <Grid Grid.Column="1" Grid.Row="3" Margin="77,0,92,0">
             <Image Source="/imagenes/logo-company.jpg" />
 
         </Grid>
-        <Grid Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2">
+        <Grid Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2">
             <Grid.RowDefinitions>
-                <RowDefinition Height="22*"/>
-                <RowDefinition Height="28*"/>
-                <RowDefinition Height="35*"/>
-                <RowDefinition Height="68*"/>
+                <RowDefinition Height="48*"/>
+                <RowDefinition Height="43*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="289*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <TextBlock Text="Enlace red social" Margin="0,3,0,1"/>
-                <TextBox  Margin="114,5,20,5" />
             </Grid>
-            <Grid Margin="0,16,0,0" Grid.RowSpan="2" >
-                <TextBlock Text="Rol actual" HorizontalAlignment="Left" Width="60"  />
-                <ComboBox Name="Rol" SelectionChanged="miComboBox_SelectionChanged" Margin="114,5,393,15">
+            <Grid Margin="0,16,0,10" Grid.RowSpan="2" >
+                <TextBlock Text="Rol actual" HorizontalAlignment="Left" Width="60" Margin="0,5,0,0"  />
+                <ComboBox Name="Rol" SelectionChanged="miComboBox_SelectionChanged" Margin="114,5,393,106">
                     <ComboBoxItem Content="Opción 1" />
                     <ComboBoxItem Content="Opción 2" />
                     <ComboBoxItem Content="Opción 3" />
                 </ComboBox>
-                <TextBlock Text="Descripcion del puesto de trabajo actual:" Margin="0,19,564,0"/>
+                <TextBlock Text="Descripcion del puesto de trabajo actual:" Margin="0,45,564,0"/>
             </Grid>
 
             <Grid Grid.Row="2" >
                 <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,20,0">
-                    <TextBlock HorizontalAlignment="Left" Width="761" Margin="0,0,-1,0"/>
+                    <TextBlock HorizontalAlignment="Left" Width="761" Margin="0,1,-1,-1"/>
                 </Border>
 
             </Grid>
@@ -113,13 +118,24 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button Margin="251,10,10,25" Content="Guardar"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="28"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Button   Grid.Column="0" Grid.Row="0" Content="Guardar" Margin="221,0,0,0"/>
+                    <Button  Grid.Row="0" Content="Cancelar" Margin="0,0,-170,0" HorizontalAlignment="Right" Width="165"/>
+                </Grid>
+                <Grid>
 
 
-                <Button Margin="10,10,251,25" Grid.Column="1" Content="Cancelar"/>
-
-
-
+                    <DataGrid Name="dataGrid" AutoGenerateColumns="True" Margin="10,10,10,50" />
+                    <TextBox Name="txtNombre"  Margin="10,35,-374,-25" />
+                    <TextBox Name="txtApellidos" Margin="10,30,0,10" />
+                    <TextBox Name="txtEmail" Margin="10,60,0,10" />
+                    <TextBox Name="txtTelefono"  Margin="10,90,0,10" />
+                    <Button Content="Guardar" Click="Guardar_Click" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="75" />
+                </Grid>
             </Grid>
 
         </Grid>
