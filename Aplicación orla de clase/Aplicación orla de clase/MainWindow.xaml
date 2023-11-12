@@ -1,0 +1,54 @@
+﻿<Window x:Class="Aplicación_orla_de_clase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aplicación_orla_de_clase"
+        mc:Ignorable="d"
+        Title="Aplicación orla de clase Aitor" Height="450" Width="800" 
+        MinWidth="600" MaxHeight="1920" MaxWidth="1080"
+        Background="#F49d6E">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <!-- Fila 4, columna 1 -->
+        <local:UserControl1 Nombre="Aritz" Apellidos="Perez de Ciriza" Email="email@educacion.navarra.es" Foto="/Imagenes/PersonajeGenerico.jpg" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2"/>
+        <local:UserControl1 Nombre="Randy" Apellidos="Wepia Achana" Email="email@educacion.navarra.es" Foto="/Imagenes/PersonajeGenerico.jpg" Grid.Row="1"  Grid.Column="2" Grid.RowSpan="2"/>
+        <local:UserControl1 Nombre="Imanol" Apellidos="Perez Aristu" Email="email@educacion.navarra.es" Foto="/Imagenes/PersonajeGenerico.jpg" Grid.Row="1" Grid.Column="4" Grid.RowSpan="2"/>
+        <local:UserControl1 Nombre="Hugo" Apellidos="Urricelqui Sarasíbar" Email="email@educacion.navarra.es" Foto="/Imagenes/PersonajeGenerico.jpg" Grid.Row="1" Grid.Column="5" Grid.RowSpan="2"/>
+        <local:UserControl1 Nombre="Aitor" Apellidos="Zubero" Email="email@educacion.navarra.es" Foto="/Imagenes/PersonajeGenerico.jpg" Grid.Row="3" Grid.Column="1" Grid.RowSpan="2"/>
+        <local:UserControl1 Nombre="Antonio" Apellidos="Virgilio" Email="email@educacion.navarra.es" Foto="/Imagenes/PersonajeGenerico.jpg" Grid.Row="3" Grid.Column="2" Grid.RowSpan="2"/>
+        <local:UserControl1 Nombre="Iván" Apellidos="Barguilla Pascual" Email="email@educacion.navarra.es" Foto="/Imagenes/PersonajeGenerico.jpg" Grid.Row="5" Grid.Column="1" Grid.RowSpan="2"/>
+        <local:UserControl1 Nombre="Kaiet" Apellidos="Jimenez Aldasoro" Email="email@educacion.navarra.es" Foto="/Imagenes/PersonajeGenerico.jpg" Grid.Row="5" Grid.Column="2" Grid.RowSpan="2"/>
+        <local:UserControl1 Nombre="Juan Pablo" Apellidos="Marin Sanchez" Email="email@educacion.navarra.es" Foto="/Imagenes/PersonajeGenerico.jpg" Grid.Row="5" Grid.Column="4" Grid.RowSpan="2"/>
+        <local:UserControl1 Nombre="Victor" Apellidos="Suros" Email="email@educacion.navarra.es" Foto="/Imagenes/PersonajeGenerico.jpg" Grid.Row="5" Grid.Column="5" Grid.RowSpan="2"/>
+        <local:UserControl1 Nombre="Khrystyna" Apellidos="Polishchuk" Email="email@educacion.navarra.es" Foto="/Imagenes/PersonajeGenerico.jpg" Grid.Row="7" Grid.Column="1" Grid.RowSpan="2"/>
+        <local:UserControl1 Nombre="Adrian" Apellidos="Vera" Email="email@educacion.navarra.es" Foto="/Imagenes/PersonajeGenerico.jpg" Grid.Row="7" Grid.Column="2" Grid.RowSpan="2"/>
+        <local:UserControl1 Nombre="Adrian" Apellidos="Garcia" Email="email@educacion.navarra.es" Foto="/Imagenes/PersonajeGenerico.jpg" Grid.Row="7" Grid.Column="4" Grid.RowSpan="2"/>
+        <local:UserControl1 Nombre="Aritz" Apellidos="Arrondo" Email="email@educacion.navarra.es" Foto="/Imagenes/PersonajeGenerico.jpg" Grid.Row="7" Grid.Column="5" Grid.RowSpan="2"/>
+        <local:UserControl1 Nombre="Alberto" Apellidos="Gonzalez" Email="email@educacion.navarra.es" Foto="/Imagenes/PersonajeGenerico.jpg" Grid.Row="9" Grid.Column="1" Grid.RowSpan="2"/>
+
+
+    </Grid>
+</Window>
