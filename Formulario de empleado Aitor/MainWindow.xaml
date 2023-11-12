@@ -6,134 +6,137 @@
         xmlns:local="clr-namespace:Formulario_de_empleado_Aitor"
         mc:Ignorable="d"
         Title="MainWindow" Height="700" Width="800">
-    <Grid Margin="10,1,0,10" RenderTransformOrigin="0.49,0.464">
-        <Grid.RowDefinitions>
+	<Grid Margin="10,1,0,10" RenderTransformOrigin="0.49,0.464">
+		<Grid.RowDefinitions>
 
 
-            <RowDefinition Height="25*"/>
-            <RowDefinition Height="109*"/>
-            <RowDefinition Height="0*"/>
-            <RowDefinition Height="36*"/>
-            <RowDefinition Height="0*"/>
-            <RowDefinition Height="85*"/>
-            <RowDefinition Height="153*"/>
-
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="396"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-
-        <TextBlock Text="Introducir de Datos de Empleados" FontSize="18" FontWeight="Bold" Grid.Row="0" Grid.ColumnSpan="2" Margin="267,0,226,5" />
-
-        <Grid Grid.Column="0" Grid.Row="1" Height="119" VerticalAlignment="Top" Grid.RowSpan="3">
-
-            <TextBlock Text="Nombre*" Margin="0,0,340,106"  />
-            <TextBox x:Name="Nombre" Margin="61,0,0,108" />
-
-            <TextBlock Text="Apellido*" Margin="0,16,340,90"/>
-            <TextBox x:Name="Apellido" Margin="61,16,0,92" />
-
-            <TextBlock Text="Email" Margin="0,32,340,74" />
-            <TextBox x:Name="Email" Margin="61,32,0,76" />
-
-            <TextBlock Text="Telefono" Margin="0,46,340,60" />
-            <TextBox x:Name="Telefono" Margin="61,48,0,60" />
-
-            <TextBlock Text="Fecha de nacimineto" Margin="0,62,282,44" />
-            <DatePicker Name="FechaNacimiento"  Margin="119,62,0,31" />
-
-            <TextBlock Text="DNI" Margin="0,96,282,10" />
-            <TextBox x:Name="DNI" Margin="61,98,0,10" />
-        </Grid>
-
-        <Grid Grid.Column="0" Grid.Row="3" Height="42" VerticalAlignment="Top" Grid.RowSpan="3">
-            <TextBlock Text="Adjuntar fotografia" Margin="0,10,257,10"/>
-            <Button  Margin="139,3,106,9" >Cargar Foto</Button>
-        </Grid>
-
-        <Grid Grid.Column="0" Grid.Row="5">
-
-            <Grid.RowDefinitions>
-                <RowDefinition Height="16"/>
-                <RowDefinition Height="16"/>
-                <RowDefinition Height="16"/>
-                <RowDefinition Height="16"/>
-                <RowDefinition Height="16"/>
-
-            </Grid.RowDefinitions>
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="61*"/>
-                <ColumnDefinition Width="335*"/>
-            </Grid.ColumnDefinitions>
-
-            <TextBlock Text="Domicilio" Grid.Row="0" Grid.Column="0" GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus" Margin="5,0,0,0" />
-            <TextBox Name="txtDireccion" Text="Direccion" Grid.Column="1" Grid.Row="0" GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus" Margin="0,0,0,1"/>
-            <TextBox Name="txtCiudad" Text="Ciudad" Grid.Row="1" Grid.Column="1" GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus" Margin="0,0,0,1"/>
-            <TextBox Name="txtProvincia" Text="Provincia" Grid.Row="2" Grid.Column="1" GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus" Margin="0,0,0,1"/>
-            <TextBox Name="txtCodigoPostal" Text="Codigo Postal" Grid.Row="3" Grid.Column="1" GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus" Margin="0,0,0,1"/>
-            <TextBox Name="txtPais" Text="Pais" Grid.Row="4" Grid.Column="1" GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus" Margin="0,0,0,1"/>
+			<RowDefinition Height="52*"/>
+			<RowDefinition Height="130*"/>
+			<RowDefinition Height="86*"/>
+			<RowDefinition Height="87*"/>
+			<RowDefinition Height="303*"/>
 
 
-        </Grid>
-        <Grid Grid.Column="1" Grid.Row="5" Margin="77,0,92,0">
-            <Image Source="/imagenes/logo-company.jpg" />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="396"/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
 
-        </Grid>
-        <Grid Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="22*"/>
-                <RowDefinition Height="28*"/>
-                <RowDefinition Height="35*"/>
-                <RowDefinition Height="68*"/>
-            </Grid.RowDefinitions>
-            <Grid Grid.Row="0">
-                <TextBlock Text="Enlace red social" Margin="0,3,0,1"/>
-                <TextBox  Margin="114,5,20,10" />
-            </Grid>
-            <Grid Margin="0,16,0,0" Grid.RowSpan="2" >
-                <TextBlock Text="Rol actual" HorizontalAlignment="Left" Width="60" Margin="0,20,0,0"  />
-                <ComboBox Name="Rol" SelectionChanged="miComboBox_SelectionChanged" Margin="106,20,401,20">
-                    <ComboBoxItem Content="Opción 1" />
-                    <ComboBoxItem Content="Opción 2" />
-                    <ComboBoxItem Content="Opción 3" />
-                </ComboBox>
-                <TextBlock Text="Descripcion del puesto de trabajo actual:" Margin="0,50,564,0"/>
-            </Grid>
+		<TextBlock Text="Introducir de Datos de Empleados" FontSize="18" FontWeight="Bold" Grid.Row="0" Grid.ColumnSpan="2" Margin="267,0,226,5" />
 
-            <Grid Grid.Row="2" >
-                <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,20,0">
-                    <TextBlock HorizontalAlignment="Left" Width="761" Margin="0,0,-1,0"/>
-                </Border>
+		<Grid Grid.Column="0" Grid.Row="1" Height="119" VerticalAlignment="Top">
 
-            </Grid>
-            <Grid Grid.Row="3">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0">
-                    <Button Margin="393,0,-132,61" Content="Guardar" Height="39" VerticalAlignment="Bottom"/>
-                    <Button Margin="258,10,3,0" Content="Cancelar" Height="39" VerticalAlignment="Top"/>
+			<TextBlock Text="Nombre*" Margin="0,0,340,106"  />
+			<TextBox x:Name="Nombre" Margin="61,0,0,108" />
 
-                </Grid>
+			<TextBlock Text="Apellido*" Margin="0,16,340,90"/>
+			<TextBox x:Name="Apellido" Margin="61,16,0,92" />
 
-                <Grid Margin="0,0,0,-13">
-                    <DataGrid Margin="0,49,-387,0" SelectionChanged="DataGrid_SelectionChanged">
-                        <DataGrid.Columns>
-                            <DataGridTextColumn Header="nombre" Width="10*" />
-                            <DataGridTextColumn Header="Apellidos" Width="20*"/>
-                            <DataGridTextColumn Header="Email" Width="20*"/>
-                            <DataGridTextColumn Header="Telefono" Width="15*"/>
-                            
-                        </DataGrid.Columns>
-                    </DataGrid>
-                </Grid>
+			<TextBlock Text="Email" Margin="0,32,340,74" />
+			<TextBox x:Name="Email" Margin="61,32,0,76" />
 
-            </Grid>
+			<TextBlock Text="Telefono" Margin="0,46,340,60" />
+			<TextBox x:Name="Telefono" Margin="61,48,0,60" />
 
-        </Grid>
+			<TextBlock Text="Fecha de nacimineto" Margin="0,62,282,44" />
+			<DatePicker Name="FechaNacimiento"  Margin="119,62,0,31" />
 
-    </Grid>
+			<TextBlock Text="DNI" Margin="0,96,282,10" />
+			<TextBox x:Name="DNI" Margin="61,98,0,10" />
+		</Grid>
+
+		<Grid Grid.Column="0" Grid.Row="2" Height="86" VerticalAlignment="Top">
+			<TextBlock Text="Adjuntar fotografia" Margin="10,37,247,21"/>
+			<Button Click="btn_CargarFoto" Margin="154,24,91,20" >Cargar Foto</Button>
+
+		</Grid>
+		<Grid Grid.Column="1" Grid.Row="2">
+			<Image x:Name="imageControl" Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+		</Grid>
+
+		<Grid Grid.Column="0" Grid.Row="3">
+
+			<Grid.RowDefinitions>
+				<RowDefinition Height="16"/>
+				<RowDefinition Height="16"/>
+				<RowDefinition Height="16"/>
+				<RowDefinition Height="16"/>
+				<RowDefinition Height="16"/>
+
+			</Grid.RowDefinitions>
+
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="61*"/>
+				<ColumnDefinition Width="335*"/>
+			</Grid.ColumnDefinitions>
+
+			<TextBlock Text="Domicilio" Grid.Row="0" Grid.Column="0" GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus" Margin="5,0,0,0" />
+			<TextBox Name="txtDireccion" Text="Direccion" Grid.Column="1" Grid.Row="0" GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus" Margin="0,0,0,1"/>
+			<TextBox Name="txtCiudad" Text="Ciudad" Grid.Row="1" Grid.Column="1" GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus" Margin="0,0,0,1"/>
+			<TextBox Name="txtProvincia" Text="Provincia" Grid.Row="2" Grid.Column="1" GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus" Margin="0,0,0,1"/>
+			<TextBox Name="txtCodigoPostal" Text="Codigo Postal" Grid.Row="3" Grid.Column="1" GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus" Margin="0,0,0,1"/>
+			<TextBox Name="txtPais" Text="Pais" Grid.Row="4" Grid.Column="1" GotFocus="Txt_GotFocus" LostFocus="Txt_LostFocus" Margin="0,0,0,1"/>
+
+
+		</Grid>
+		<Grid Grid.Column="1" Grid.Row="3" Margin="77,0,92,0">
+			<Image Source="/imagenes/logo-company.jpg" />
+
+		</Grid>
+		<Grid Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="22*"/>
+				<RowDefinition Height="28*"/>
+				<RowDefinition Height="35*"/>
+				<RowDefinition Height="68*"/>
+			</Grid.RowDefinitions>
+			<Grid Grid.Row="0">
+				<TextBlock Text="Enlace red social" Margin="0,3,0,1"/>
+				<TextBox  Margin="114,5,20,10" />
+			</Grid>
+			<Grid Margin="0,16,0,0" Grid.RowSpan="2" >
+				<TextBlock Text="Rol actual" HorizontalAlignment="Left" Width="60" Margin="0,20,0,0"  />
+				<ComboBox Name="Rol" SelectionChanged="miComboBox_SelectionChanged" Margin="106,20,401,38">
+					<ComboBoxItem Content="Opción 1" />
+					<ComboBoxItem Content="Opción 2" />
+					<ComboBoxItem Content="Opción 3" />
+				</ComboBox>
+				<TextBlock Text="Descripcion del puesto de trabajo actual:" Margin="0,50,564,0"/>
+			</Grid>
+
+			<Grid Grid.Row="2" >
+				<Border BorderBrush="Black" BorderThickness="1" Margin="0,0,20,0">
+					<TextBlock HorizontalAlignment="Left" Width="761" Margin="0,0,-1,0"/>
+				</Border>
+
+			</Grid>
+			<Grid Grid.Row="3">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Grid Grid.Column="0">
+					<Button Margin="393,0,-132,86" Click="botonGuardar" Content="Guardar" Height="39" VerticalAlignment="Bottom"/>
+					<Button Margin="258,10,3,0" Content="Cancelar" Height="39" VerticalAlignment="Top"/>
+
+				</Grid>
+
+				<Grid Margin="0,0,0,-13">
+					<DataGrid Margin="0,60,-373,10" SelectionChanged="DataGrid_SelectionChanged">
+						<DataGrid.Columns>
+							<DataGridTextColumn Header="nombre" Width="10*" />
+							<DataGridTextColumn Header="Apellidos" Width="20*"/>
+							<DataGridTextColumn Header="Email" Width="20*"/>
+							<DataGridTextColumn Header="Telefono" Width="15*"/>
+
+						</DataGrid.Columns>
+					</DataGrid>
+				</Grid>
+
+			</Grid>
+
+		</Grid>
+
+	</Grid>
 </Window>
