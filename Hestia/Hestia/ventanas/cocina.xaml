@@ -1,0 +1,65 @@
+﻿<Window x:Class="Hestia.ventanas.cocina"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hestia.ventanas"
+        mc:Ignorable="d"
+        Title="cocina" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65*" />
+            <RowDefinition Height="354*" />
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="34*" />
+            <ColumnDefinition Width="34*" />
+            <ColumnDefinition Width="329*" />
+        </Grid.ColumnDefinitions>
+        <Button  Margin="0"  >
+            <Image Source="/imagenes/image2vector.png" Stretch="UniformToFill" />
+        </Button>
+
+
+        <Border Width="Auto" Background="#BCCCCC"  Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="14*"/>
+                    <RowDefinition Height="8*"/>
+                    <RowDefinition Height="25*"/>
+                    <RowDefinition Height="19*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="191*"/>
+                    <ColumnDefinition Width="534*"/>
+                </Grid.ColumnDefinitions>
+                <ComboBox Width="200" SelectedIndex="0" Margin="68,6,456,2.5" Background="Red" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Row="1">
+                    <ComboBoxItem Content="home" />
+                    <ComboBoxItem Content="ajustes" />
+                    <ComboBoxItem Content="camaras" />
+                </ComboBox>
+                <TextBox Text="   Busqueda" Margin="113,6,88,2.5" Grid.Column="1" Grid.RowSpan="2" Grid.Row="1" />
+
+            </Grid>
+
+        </Border>
+
+        <Border Width="Auto" Background="#265A5A"  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid>
+
+            </Grid>
+
+        </Border>
+        <!-- porque no salen los botones-->
+        <Button Grid.Column="1" Grid.Row="1" Margin="471,191,112,151" Background="Red" RenderTransformOrigin="0.816,0" Content="off" Panel.ZIndex="1"/>
+        <Button Grid.Column="1" Grid.Row="1" Margin="297,33,289,308" Background="Red" RenderTransformOrigin="0.5,0.5" Content="OFF" />
+        <Button Grid.Column="1" Grid.Row="1" Margin="471,142,112,200" Background="Red" RenderTransformOrigin="0.5,0.5" Content="OFF" />
+        <Button Grid.Column="1" Grid.Row="1" Margin="127,142,459,199" Background="#00FF00" RenderTransformOrigin="0.5,0.5" Content="ON" />
+        <Button Grid.Column="1" Grid.Row="1" Margin="382,176,201,166" Background="#00FF00" RenderTransformOrigin="0.816,0" Content="ON"/>
+        <Image Source="/imagenes/cocina1.jpg" Grid.Column="2" Grid.Row="2" Stretch="UniformToFill"/>
+
+
+    </Grid>
+</Window>
