@@ -46,15 +46,15 @@
                 <TextBox Text="   Busqueda" Margin="113,6,88,2.5" Grid.Column="1" Grid.RowSpan="2" Grid.Row="1" />
 
             </Grid>
-               
+
         </Border>
 
         <Border Width="Auto" Background="#265A5A"  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
-            <TextBlock Text="Your Text Here" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="16" FontWeight="Bold" />
-    
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="10" FontWeight="Bold" Height="344" Margin="10,0,10,10" Width="116" ><Run Text="Vegetales:"/><LineBreak/><Run Text="Tomates"/><LineBreak/><Run Text="Cebollas"/><LineBreak/><Run Text="Ajos"/><LineBreak/><Run Text="Zanahorias"/><LineBreak/><Run Text="Apio"/><LineBreak/><Run Text=""/><LineBreak/><Run Text="Frutas:"/><LineBreak/><Run Text="Manzanas"/><LineBreak/><Run Text="Plátanos"/><LineBreak/><Run Text="Naranjas"/><LineBreak/><Run Text="Limones"/><LineBreak/><Run Text=""/><LineBreak/><Run/><LineBreak/><Run Text="Productos lácteos:"/><LineBreak/><Run Text="Leche"/><LineBreak/><Run Text="Queso"/><LineBreak/><Run Text="Mantequilla"/><LineBreak/><Run Text=""/><LineBreak/><Run Text="Proteínas:"/><LineBreak/><Run Text="Carne de res"/><LineBreak/><Run Text="Pollo"/><LineBreak/><Run Text=""/><LineBreak/><Run Text="Cereales y granos:"/><LineBreak/><Run Text="Arroz"/><LineBreak/><Run Text="Pasta"/></TextBlock>
+
         </Border>
         <Grid/>
-       
+
         <!-- Adjusted margins for the buttons -->
         <Button Grid.Column="2" Grid.Row="1" Margin="505,151,123,186" Background="Red" RenderTransformOrigin="0.5,0.5" Content="OFF" />
         <Button Grid.Column="2" Grid.Row="1" Margin="505,214,123,120" Background="Red" RenderTransformOrigin="0.5,0.5" Content="OFF" />
@@ -62,6 +62,6 @@
         <Button Grid.Column="2" Grid.Row="1" Margin="412,153,216,181" Background="#00FF00" RenderTransformOrigin="0.5,0.5" Content="ON" />
         <Button Grid.Column="2" Grid.Row="1" Margin="297,65,331,269" Background="#00FF00" RenderTransformOrigin="0.357,0.5" Content="ON" />
         <Button Grid.Column="2" Grid.Row="1" Margin="401,228,227,106" Background="#00FF00" RenderTransformOrigin="0.5,0.5" Content="ON" />
-    
+
     </Grid>
 </Window>

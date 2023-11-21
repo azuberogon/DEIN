@@ -64,6 +64,9 @@
     <Compile Include="ventanas\musica.xaml.cs">
       <DependentUpon>musica.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ventanas\planos.xaml.cs">
+      <DependentUpon>planos.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -85,6 +88,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ventanas\musica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ventanas\planos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -115,11 +122,22 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="imagenes\ajuste.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="imagenes\cocina1.jpg" />
     <Resource Include="imagenes\discoMusica.jpg" />
     <Resource Include="imagenes\image2vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\busqueda-de-lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\tv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\imagen_2023-11-21_205207639-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
