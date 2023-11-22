@@ -22,9 +22,9 @@
         <Button Content="btnAjustes" Grid.Row="0" Grid.Column="0" Margin="10" Background="Gold"  Click="Btn_Ajustas" x:Name="btnAjustes" />
         <Button Content="btnCocina" Grid.Row="1" Grid.Column="0"  Margin="10" Background="Red"  Click="Btn_Cocina" x:Name="btnCocina" />
         <Button Content="btnMusica" Grid.Row="2" Grid.Column="0" Margin="10" Background="BlueViolet"  Click="Btn_Muscia" x:Name="btnMusica" />
-        <Button Content="btnMedio" Grid.Row="0" Grid.Column="1" Margin="10"/>
-        <Button Content="boto " Grid.Row="0" Grid.Column="2" Margin="10"/>
-        <Button Content="btnHome" Grid.Row="1" Grid.Column="1" Margin="10"/>
+        <Button Content="btnMedio" Grid.Row="0" Grid.Column="1" Margin="10" Click="Button_Click"/>
+        <Button Content="boto " Grid.Row="0" Grid.Column="2" Margin="10" Click="Button_Click_1"/>
+        <Button Content="btnHome" Grid.Row="1" Grid.Column="1" Margin="10" Click="Button_home_2"/>
         <Button Content="boton 1 ajustes" Grid.Row="1" Grid.Column="2" Margin="10"/>
         <Button Content="boton 1 ajustes" Grid.Row="2" Grid.Column="1" Margin="10"/>
         <Button Content="boton 1 ajustes" Grid.Row="2" Grid.Column="2"  Margin="10"/>
