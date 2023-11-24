@@ -58,14 +58,32 @@
     <Compile Include="ventanas\ajustes.xaml.cs">
       <DependentUpon>ajustes.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ventanas\camaras.xaml.cs">
+      <DependentUpon>camaras.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ventanas\casas.xaml.cs">
+      <DependentUpon>casas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ventanas\climatizacion.xaml.cs">
+      <DependentUpon>climatizacion.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ventanas\cocina.xaml.cs">
       <DependentUpon>cocina.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ventanas\consumo.xaml.cs">
+      <DependentUpon>consumo.xaml</DependentUpon>
     </Compile>
     <Compile Include="ventanas\musica.xaml.cs">
       <DependentUpon>musica.xaml</DependentUpon>
     </Compile>
     <Compile Include="ventanas\planos.xaml.cs">
       <DependentUpon>planos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ventanas\teles.xaml.cs">
+      <DependentUpon>teles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ventanas\usuarios.xaml.cs">
+      <DependentUpon>usuarios.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -83,7 +101,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ventanas\camaras.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ventanas\casas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ventanas\climatizacion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ventanas\cocina.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ventanas\consumo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -92,6 +126,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ventanas\planos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ventanas\teles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ventanas\usuarios.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -138,6 +180,20 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="imagenes\imagen_2023-11-21_205207639-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\consumos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\3.gif" />
+    <Resource Include="imagenes\7BUt.gif" />
+    <Resource Include="imagenes\camara 1 .gif" />
+    <Resource Include="imagenes\camara 2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\casa2-removebg-preview.png" />
+    <Resource Include="imagenes\casa_1-removebg-preview.png" />
+    <Resource Include="imagenes\casa_3-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -26,15 +26,30 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="200" />
             </Grid.ColumnDefinitions>
+            <!-- En el archivo MainWindow.xaml -->
 
-            <Button Content="botón superior Izquierdo" Grid.Row="1" Grid.Column="1" Margin="10" Background="Gold"/>
-            <Button Content="botón superior Izquierdo" Grid.Row="2" Grid.Column="1" Margin="10" Background="Gold"/>
-            <Button Content="botón superior Izquierdo" Grid.Row="3" Grid.Column="1" Margin="10" Background="Gold"/>
-            <Button Content="botón superior Izquierdo" Grid.Row="4" Grid.Column="1" Margin="10" Background="Gold"/>
-            <Button Content="botón superior Izquierdo" Grid.Row="5" Grid.Column="1" Margin="10" Background="Gold"/>
-            <Button Content="botón superior Izquierdo" Grid.Row="6" Grid.Column="1" Margin="10" Background="Gold"/>
-            <Button Content="botón superior Izquierdo" Grid.Row="7" Grid.Column="1" Margin="10" Background="Gold"/>
-            <Button Content="botón superior Izquierdo" Grid.Row="8" Grid.Column="1" Margin="10" Background="Gold"/>
+            <Button  Grid.Column="1" Panel.ZIndex="1" Click="BtnIrAOtraVentana" Margin="181,0,156,0" >
+                <Image Source="/imagenes/image2vector.png" Stretch="UniformToFill" MouseDown="Image_Click" Width="52" Height="46" RenderTransformOrigin="0.5,0.5" >
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="0.354"/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="-0.16"/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+            </Button>
+
+
+            <Button Content="Añadir usuarios" Grid.Row="1" Grid.Column="1" Margin="10" Background="Gold"/>
+            <Button Content="Casas" Grid.Row="2" Grid.Column="1" Margin="10" Background="Gold"/>
+            <Button Content="Estadisticas" Grid.Row="3" Grid.Column="1" Margin="10" Background="Gold"/>
+            <Button Content="Camaras" Grid.Row="4" Grid.Column="1" Margin="10" Background="Gold"/>
+            <Button Content="Añadir tv" Grid.Row="5" Grid.Column="1" Margin="10" Background="Gold"/>
+            <Button Content="Añdir robot" Grid.Row="6" Grid.Column="1" Margin="10" Background="Gold"/>
+            <Button Content="Errores" Grid.Row="7" Grid.Column="1" Margin="10" Background="Gold"/>
+            <Button Content="Administrador" Grid.Row="8" Grid.Column="1" Margin="10" Background="Gold"/>
         </Grid>
     </Grid>
 </Window>

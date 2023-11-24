@@ -19,15 +19,14 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Button Content="Ajustes" Grid.Row="0" Grid.Column="0" Margin="10" Background="Gold"  Click="Btn_Ajustas" x:Name="btnAjustes" />
-        <Button Content="Musica" Grid.Row="1" Grid.Column="0"  Margin="10" Background="Red"  Click="Btn_Cocina" x:Name="btnMusica" />
-        <Button Content="Camaras" Grid.Row="2" Grid.Column="0" Margin="10" Background="BlueViolet"  Click="Btn_Muscia" x:Name="btnCamaras" />
-        <Button Content="Climatizador" Grid.Row="0" Grid.Column="1" Margin="10" Click="BtnClimatizador"/>
-        <Button Content="Consumo" Grid.Row="0" Grid.Column="2" Margin="10" Click="btnConsumo"/>
-        <Button Content="Home" Grid.Row="1" Grid.Column="1" Margin="10" Click="BtnHome"/>
-        <Button Content="Cocina" Grid.Row="1" Grid.Column="2" Margin="10" Click="BtnCocina"/>
-        <Button Content="TV" Grid.Row="2" Grid.Column="1" Margin="10" Click="btnTV"/>
-        <Button Content="limpieza" Grid.Row="2" Grid.Column="2"  Margin="10" Click="btnlimpieza"/>
+        <Button Content="Ajustes" Grid.Row="0" Grid.Column="0" Margin="10" Background="Gold"  Click="BtnAjustas" x:Name="btnAjustes" />
+        <Button Content="Musica" Grid.Row="1" Grid.Column="0"  Margin="10" Background="Teal"  Click="BtnMuscia" x:Name="btnMusica" />
+        <Button Content="Camaras" Grid.Row="2" Grid.Column="0" Margin="10" Background="Aqua"  Click="BtnCamaras" x:Name="btnCamaras" />        <Button Content="Climatizador" Grid.Row="0" Grid.Column="1" Margin="10" Background="Cyan" Click="BtnClimatizador"/>
+        <Button Content="Consumo" Grid.Row="0" Grid.Column="2" Margin="10" Background="DarkCyan" Click="btnConsumo"/>
+        <Button Content="Home" Grid.Row="1" Grid.Column="1" Margin="10" Background="AntiqueWhite"  Click="BtnHome"/>
+        <Button Content="Cocina" Grid.Row="1" Grid.Column="2" Margin="10" Background="Lime" Click="BtnCocina"/>
+        <Button Content="TV" Grid.Row="2" Grid.Column="1" Margin="10" Background="LightGreen" Click="btnTV"/>
+        <Button Content="limpieza" Grid.Row="2" Grid.Column="2"  Margin="10" Background="YellowGreen" Click="btnlimpieza"/>
 
     </Grid>
 

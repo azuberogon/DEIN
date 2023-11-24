@@ -19,8 +19,9 @@
             <ColumnDefinition Width="34*" />
             <ColumnDefinition Width="329*" />
         </Grid.ColumnDefinitions>
-        <Image Source="/imagenes/image2vector.png" Stretch="UniformToFill" />
-
+        <Button Panel.ZIndex="1" Click="BtnIrAOtraVentana">
+            <Image Source="/imagenes/image2vector.png" Stretch="UniformToFill" MouseDown="Image_Click" Height="65" />
+        </Button>
         <Border Width="Auto" Background="#BCCCCC"  Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2">
             <Grid>
                 <Grid.ColumnDefinitions>

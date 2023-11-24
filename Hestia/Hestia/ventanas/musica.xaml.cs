@@ -23,5 +23,21 @@ namespace Hestia.ventanas
         {
             InitializeComponent();
         }
+        private void BtnIrAOtraVentana(object sender, RoutedEventArgs e)
+        {
+            AbrirOtraVentana();
+        }
+
+        private void Image_Click(object sender, MouseButtonEventArgs e)
+        {
+            AbrirOtraVentana();
+        }
+
+        private void AbrirOtraVentana()
+        {
+            MainWindow otraVentana = new MainWindow(); // Reemplaza "OtraVentana" con el nombre de tu ventana de destino
+            otraVentana.Show();
+            this.Hide(); // O cierra la ventana actual si es necesario
+        }
     }
 }

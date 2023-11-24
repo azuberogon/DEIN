@@ -26,68 +26,67 @@ namespace Hestia
             InitializeComponent();
         }
 
-        private void Btn_Ajustas(object sender, RoutedEventArgs e)
+        private void BtnAjustas(object sender, RoutedEventArgs e)
         {
             ajustes ajustes = new ajustes();
             ajustes.Show();
+            this.Hide();
         }
 
-        
-
-        private void Button_home_2(object sender, RoutedEventArgs e)
+        private void btnConsumo(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void consumo(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
+            consumo plan = new consumo();
+            plan.Show();
+            this.Hide();
         }
 
         private void btnlimpieza(object sender, RoutedEventArgs e)
         {
             planos plan = new planos();
             plan.Show();
+            this.Hide();
         }
 
-        private void Btn_Muscia(object sender, RoutedEventArgs e)
+        private void BtnMuscia(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void Btn_Cocina(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnConsumo(object sender, RoutedEventArgs e)
-        {
-
+            musica plan = new musica();
+            plan.Show();
+            this.Hide();
         }
 
         private void BtnCocina(object sender, RoutedEventArgs e)
         {
-
+            cocina plan = new cocina();
+            plan.Show();
+            this.Hide();
         }
 
         private void BtnClimatizador(object sender, RoutedEventArgs e)
         {
-
+            climatizacion plan = new climatizacion();
+            plan.Show();
+            this.Hide();
         }
 
         private void btnTV(object sender, RoutedEventArgs e)
         {
-
+            teles plan = new teles();
+            plan.Show();
+            this.Hide();
         }
 
         private void BtnHome(object sender, RoutedEventArgs e)
         {
+            casas plan = new casas();
+            plan.Show();
+            this.Hide();
+        }
 
+        private void BtnCamaras(object sender, RoutedEventArgs e)
+        {
+            camaras plan = new camaras();
+            plan.Show();
+            this.Hide();
         }
     }
 }

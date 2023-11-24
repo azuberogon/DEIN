@@ -11,9 +11,11 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Hestia.ventanas;
 
 namespace Hestia.ventanas
 {
+
     /// <summary>
     /// Lógica de interacción para cocina.xaml
     /// </summary>
@@ -23,5 +25,38 @@ namespace Hestia.ventanas
         {
             InitializeComponent();
         }
+
+        // En el archivo MainWindow.xaml.cs
+        private void BtnIrAOtraVentana(object sender, RoutedEventArgs e)
+        {
+            AbrirOtraVentana();
+        }
+
+        private void Image_Click(object sender, MouseButtonEventArgs e)
+        {
+            AbrirOtraVentana();
+        }
+
+        private void AbrirOtraVentana()
+        {
+            MainWindow otraVentana = new MainWindow(); // Reemplaza "OtraVentana" con el nombre de tu ventana de destino
+            otraVentana.Show();
+            this.Hide(); // O cierra la ventana actual si es necesario
+        }
+
     }
+
+
+
+
+
+
+
+
+
+
 }
+
+   
+
+

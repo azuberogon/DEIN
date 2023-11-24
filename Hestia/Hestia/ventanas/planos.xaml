@@ -46,17 +46,15 @@
             
 
             <!-- Bloque transparente 2 -->
-            <Rectangle Grid.Column="2" Grid.Row="1" Fill="Transparent" MouseLeftButtonDown="ChangeColor" Margin="435,10,144,59"/>
-            <Rectangle Grid.Column="2" Grid.Row="1" Fill="Transparent" MouseLeftButtonDown="ChangeColor" Margin="294,10,221,123"/>
-            <Rectangle Grid.Column="2" Grid.Row="1" Fill="Transparent" MouseLeftButtonDown="ChangeColor" Margin="129,10,362,123"/>
-            <Rectangle Grid.Column="2" Grid.Row="1" Fill="Transparent" MouseLeftButtonDown="ChangeColor" Margin="129,231,419,10"/>
-            <Rectangle Grid.Column="2" Grid.Row="1" Fill="Transparent" MouseLeftButtonDown="ChangeColor" Margin="237,231,374,10"/>
-            <Rectangle Grid.Column="2" Grid.Row="1" Fill="Transparent" MouseLeftButtonDown="ChangeColor" Margin="282,231,266,10"/>
-            <Rectangle Grid.Column="2" Grid.Row="1" Fill="Transparent" MouseLeftButtonDown="ChangeColor" Margin="390,231,221,10"/>
-
-
-            <Button  Margin="0"  >
-                <Image Source="/imagenes/image2vector.png" Stretch="UniformToFill" />
+            <Rectangle x:Name="Garaje" Grid.Column="2" Grid.Row="1" Fill="Transparent" MouseLeftButtonDown="ChangeColor" Margin="431,5,141,56"/>
+            <Rectangle x:Name="Cocina" Grid.Column="2" Grid.Row="1" Fill="Transparent" MouseLeftButtonDown="ChangeColor" Margin="290,10,221,119"/>
+            <Rectangle x:Name="Salon" Grid.Column="2" Grid.Row="1" Fill="Transparent" MouseLeftButtonDown="ChangeColor" Margin="124,5,362,112"/>
+            <Rectangle x:Name="habitacion1" Grid.Column="2" Grid.Row="1" Fill="Transparent" MouseLeftButtonDown="ChangeColor" Margin="124,224,419,10"/>
+            <Rectangle x:Name="baño" Grid.Column="2" Grid.Row="1" Fill="Transparent" MouseLeftButtonDown="ChangeColor" Margin="237,231,374,10"/>
+            <Rectangle x:Name="habitacion2" Grid.Column="2" Grid.Row="1" Fill="Transparent" MouseLeftButtonDown="ChangeColor" Margin="282,231,266,10"/>
+            <Rectangle x:Name="baño1" Grid.Column="2" Grid.Row="1" Fill="Transparent" MouseLeftButtonDown="ChangeColor" Margin="390,231,221,10"/>
+            <Button Panel.ZIndex="1" Click="BtnIrAOtraVentana" Height="65" VerticalAlignment="Top">
+                <Image Source="/imagenes/image2vector.png" Stretch="UniformToFill" MouseDown="Image_Click" Height="65" />
             </Button>
 
 
