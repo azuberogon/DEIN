@@ -8,8 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         
-        <Grid Margin="124,139,87,99">
-            <Button Content="listas de emprleados" Margin="10,70,423,51"/>
+        <Grid Margin="113,139,82,99">
+            <Button Content="listas de emprleados" Margin="10,70,423,51" Click="Button_Click"/>
 
             <!-- Segundo botón -->
             <Button Content="Agregar Empleados" Margin="191,70,235,51"/>
