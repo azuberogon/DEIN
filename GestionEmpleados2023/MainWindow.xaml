@@ -7,17 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
-        <Grid Margin="113,139,82,99">
-            <Button Content="listas de emprleados" Margin="10,70,423,51" Click="Button_Click"/>
-
-            <!-- Segundo botón -->
-            <Button Content="Agregar Empleados" Margin="191,70,235,51"/>
-
-            <!-- Tercer botón -->
-            <Button Content="Buscar Empleado"  Margin="382,70,57,51"/>
-            
-        </Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="Departamento RRHH" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,33,12,142"/>
+        <Button Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" Content="Lista de Empleados" Click="ListaEmpleados" Margin="10,0" Height="80"  />
+        <Button Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" Content="Agregar Empleados"  Click="AgregarEmpleado" Margin="10,0" Height="80" />
+        <Button Grid.Column="2" Grid.Row="1" VerticalAlignment="Top" Content="Buscar Empleados"   Click="Buscar" Margin="10,0" Height="80"  />
+    
     </Grid>
 </Window>
