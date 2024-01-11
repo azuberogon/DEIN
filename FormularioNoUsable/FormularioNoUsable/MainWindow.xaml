@@ -5,8 +5,100 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FormularioNoUsable"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="800">
     <Grid>
-        
+        <Grid Background="#00ffff">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Introduccion de Datos de Empleados" HorizontalAlignment="Center"></TextBlock>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,15,0,7">
+                <TextBox Width="300" x:Name="txtNombre" Margin="7,0,0,0" Text="escriba aqui su respuesta" />
+                <TextBlock Text="Nombre*" Width="50" Margin="400,0,0,0"/>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,0,7">
+                <TextBox Width="300" Name="txtApellidos" Margin="7,0,0,0" Text="escriba aquí su respuesta" />
+                <TextBlock Text="Apellidos" Width="50" Margin="400,0,0,0" />
+            </StackPanel>
+            <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0,0,0,7">
+                <TextBox Width="300" Name="txtEmail" Margin="7,0,0,0" Text="escriba aqui su respuesta" Background="#2a2a2a"/>
+                <TextBlock Text="E-mail*" Width="50" Margin="400,0,0,0"/>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="0,0,0,7">
+                <TextBox Width="300" Name="txtTelefono" Margin="7,0,0,0" Text="escriba aqui su respuesta" Background="#2a2a2a"/>
+                <TextBlock Text="Telefono*" Width="50" Margin="400,0,0,0"/>
+            </StackPanel>
+            <StackPanel Grid.Row="5" Orientation="Horizontal" Margin="0,0,0,7">
+                <DatePicker Width="200" Name="txtNacimiento" Margin="20,0,0,0"></DatePicker>
+                <TextBlock Text="Fecha de Nacimiento" Width="112" Margin="400,0,0,0"/>
+            </StackPanel>
+            <StackPanel Grid.Row="6" Orientation="Horizontal" Margin="0,0,0,7">
+                <TextBlock Text="DNI" Width="70" Margin="4,0,0,0"/>
+                <TextBox Width="300" x:Name="txtDNI" Margin="300,0,0,0"/>
+            </StackPanel>
+            <StackPanel Grid.Row="7" Orientation="Horizontal" Margin="0,50,0,7">
+                <!--<Button Margin="10,0,0,22" Padding="7" Width="82" Content="Cargar Foto"  Click="CargarImagen_Click"/>-->
+                <TextBlock Text="Cargar Foto" MouseLeftButtonDown="CargarImagen_Click"/>
+                
+                <TextBlock Text="Adjuntar Fotografia" x:Name="AdjuntarFotogria" Width="103" Margin="400,7,0,0" />
+                <Image Name="imagenAmostrar" Width="150" Height="50" HorizontalAlignment="Center" />
+            </StackPanel>
+            <StackPanel Grid.Row="8" Orientation="Horizontal" Margin="0,0,0,7">
+                <TextBlock Text="Domicilio" Width="112" Margin="4,0,0,0"></TextBlock>
+                <StackPanel Orientation="Vertical">
+                    <TextBox Width="300" Margin="5,0,0,5" Name="txtDireccion" Text="Direccion" GotFocus="txt_GotFocus" LostFocus="txt_LostFocus"></TextBox>
+                    <TextBox Width="300" Margin="5,0,0,5" Name="txtCiudad" Text="Ciudad" GotFocus="txt_GotFocus" LostFocus="txt_LostFocus"></TextBox>
+                    <TextBox Width="300" Margin="5,0,0,5" Name="txtProvincia" Text="Provincia" GotFocus="txt_GotFocus" LostFocus="txt_LostFocus"></TextBox>
+                    <TextBox Width="300" Margin="5,0,0,5" Name="txtPostal" Text="Codigo Postal" GotFocus="txt_GotFocus" LostFocus="txt_LostFocus"  ></TextBox>
+                    <TextBox Width="300" Margin="5,0,0,5" Name="txtPais" Text="Pais" GotFocus="txt_GotFocus" LostFocus="txt_LostFocus"/>
+                </StackPanel>
+                <Image Source="/Imagenes/abstract-geometric-logo-or-infinity-line-logo-for-your-company-free-vector.jpg" Margin="50,60,0,60" Width="73" />
+            </StackPanel>
+            <StackPanel Grid.Row="9" Orientation="Horizontal" Margin="0,0,0,7">
+                <TextBlock Text="Enlace a red Social" Width="129" Margin="4,0,0,0"/>
+                <TextBox Width="492" Name="txtRedSocial" Margin="-20,0,0,0"/>
+            </StackPanel>
+            <StackPanel Grid.Row="10" Orientation="Horizontal" Margin="0,0,0,7">
+                <TextBlock Text="Rol Actual" Width="129" Margin="4,0,0,0"/>
+                <ComboBox Width="222" Name="txtRol" Margin="-20,0,0,0">
+                    <ComboBoxItem Content="Desarrollador"/>
+                    <ComboBoxItem Content="Analista"/>
+                    <ComboBoxItem Content="Espia"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Grid.Row="11" Orientation="Horizontal" Margin="0,0,0,7">
+                <TextBlock Text="Descripcion del puesto de trabajo actual: " Width="240" Margin="4,0,0,0"></TextBlock>
+                <TextBox Width="773" Name="txtDescripcion" Margin="-230,30,0,0" Height="69"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="12" Orientation="Horizontal" Margin="0,0,0,7">
+                <Button Width="100" Height="50" Margin="5,0,0,2" Click="btnCancelar" Content="Cancelar" Background="Green"/>
+                <Button Width="123" Height="50" Margin="550,2,0,6" Click="btnGuardar" Content="Guardar" Background="Red"/>
+
+            </StackPanel>
+            <StackPanel Grid.Row="13" Orientation="Horizontal">
+                <DataGrid x:Name="datagrid" ItemsSource="{Binding}" AutoGenerateColumns="False" Width="794">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Nombre" Binding="{Binding nombre}" Width="200"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Apellidos" Binding="{Binding apellidos}" Width="200"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Email" Binding="{Binding email}" Width="200"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Telefono" Binding="{Binding telefono}" Width="200"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+
+        </Grid>
     </Grid>
 </Window>
